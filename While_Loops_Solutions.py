@@ -36,3 +36,45 @@ i=0
 while int(input()) != 0:
     i=i+1
 print(i)
+
+#Sequence Sum
+
+S = 0
+a = int(input())
+while a != 0:
+    S = S + a
+    a = int(input())
+print(S)
+
+#Sequence Average
+
+avg = 0
+a = int(input())
+i=0
+S=0
+while a!= 0:
+    S = S + a
+    i=i+1
+    avg=S/i
+    a = int(input())
+print(avg)
+
+
+#Maximum in Sequence
+max = 0
+a = int(input())
+while a != 0:
+    if a > max:
+        max = a
+    a = int(input())
+print(max)
+
+#Even numbers in Sequence
+i = 0
+a = int(input())
+while a != 0:
+    if a%2==0:
+        i=i+1
+    a = int(input())
+
+print(i)
