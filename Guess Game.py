@@ -11,7 +11,7 @@ if counter == 3 and guess != secretWord:
 elif counter <= 3 and guess == secretWord:
     print('You win')
 
-#Print Pattern
+#Print Pattern for name ladder
 a = input()
 for i in range(len(a)+1):
     print(a[:i])
