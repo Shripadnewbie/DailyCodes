@@ -10,3 +10,8 @@ if counter == 3 and guess != secretWord:
     print('Out of guesses.You Lose!!')
 elif counter <= 3 and guess == secretWord:
     print('You win')
+
+#Print Pattern
+a = input()
+for i in range(len(a)+1):
+    print(a[:i])
