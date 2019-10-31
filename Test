@@ -1,10 +1,30 @@
-n = int(input())
-sum_cards = 0
-for i in range(1, n + 1):
-    sum_cards += i
-# One can prove the following:
-# sum_cards == n * (n + 1) // 2
-# However, we'll calculate that using the loop.
-for i in range(n - 1):
-    sum_cards -= int(input())
-print(sum_cards)
+from ClassTest import question
+
+
+question_prompts = [
+    "What color are apples? \n(a) Red/Green \n(b) Purple \n(c) Yellow\n\n",
+    "What color are Bananas? \n(a) Teal \n(b) Magenta \n(c) Yellow\n\n",
+    "What color are strawberries? \n(a) Yellow\n(b) Blue \n(c) Red\n\n"
+]
+
+questions = [
+    question(question_prompts[0],"a"),
+    question(question_prompts[1],"b"),
+    question(question_prompts[2],"c")
+    ]
+
+def run_test(questions):
+    score = 0
+    for ques in questions:
+        answer = input(ques.prompt)
+        if answer == ques.answer:
+            score +=1
+    print("Score is : "+ str(score) + "/"+str(len(questions)))
+
+run_test(questions)
+from ClassTest import Student
+student1 = Student('Ram','CSE',2.5)
+student2 = Student('Sam',"ECE",3.6)
+
+print(student2.on_honor_call())
+
